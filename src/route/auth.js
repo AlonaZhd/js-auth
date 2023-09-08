@@ -18,7 +18,13 @@ router.get('/signup', function (req, res) {
     // вказуємо назву контейнера
     name: 'signup',
     // вказуємо назву компонентів
-    component: ['back-button', 'field', 'field-password'],
+    component: [
+      'back-button',
+      'field',
+      'field-select',
+      'field-password',
+      'field-checkbox',
+    ],
 
     // вказуємо назву сторінки
     title: 'Signup page',
@@ -33,7 +39,7 @@ router.get('/signup', function (req, res) {
           text: 'Адміністратор',
         },
         {
-          value: User.USER_ROLE.DEVELOPER,
+          value: User.USER_ROLE.DEVELOPPER,
           text: 'Розробник',
         },
       ],
