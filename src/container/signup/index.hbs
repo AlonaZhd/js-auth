@@ -31,9 +31,9 @@
             </div>
 
             <div class="form__item">
-                {{> field-password action="singupForm.change" label='Пароль ще раз' name='password'
+                {{> field-password action="singupForm.change" label='Пароль ще раз' name='passwordAgain'
                 placeholder="Введіть пароль"}}
-                <span name="password" class="form__error">Увага, пароль неправильний!</span>
+                <span name="passwordAgain" class="form__error">Увага, пароль неправильний!</span>
             </div>
 
             <div class="form__item">
@@ -43,9 +43,9 @@
             </div>
         </div>
 
-        <button onclick="singupForm.submit()" class="button" type="button">Зареєструватися</button>
+        <button onclick="singupForm.submit()" class="button button--disabled" type="button">Зареєструватися</button>
 
-        <span class="alert alert--error">Увага, помилка!</span>
+        <span class="alert alert--disabled">Увага, помилка!</span>
     </form>
 </div>
 
