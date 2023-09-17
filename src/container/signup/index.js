@@ -4,6 +4,8 @@ import {
   REG_EXP_PASSWORD,
 } from '../../script/form'
 
+import { saveSession } from '../../script/session'
+
 class SingupForm extends Form {
   FIELD_NAME = {
     EMAIL: 'email',
@@ -83,6 +85,7 @@ class SingupForm extends Form {
 
         if (res.ok) {
           this.setAlert('success', data.message)
+          saveSession(data.session.token)
         } else {
           this.setAlert('error', data.message)
         }
