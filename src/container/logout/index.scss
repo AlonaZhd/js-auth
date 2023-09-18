@@ -1,0 +1,6 @@
+@use '../../style' as s;
+
+main {
+	color: s.color(light);
+	padding: s.space(4);
+} 

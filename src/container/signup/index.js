@@ -85,7 +85,8 @@ class SingupForm extends Form {
 
         if (res.ok) {
           this.setAlert('success', data.message)
-          saveSession(data.session.token)
+          saveSession(data.session)
+          location.assign('/')
         } else {
           this.setAlert('error', data.message)
         }

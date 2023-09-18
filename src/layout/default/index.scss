@@ -50,4 +50,10 @@ body {
 		font-size: 24px;
 		color: s.color(dark);
 	}
+
+	&__subtitle {
+		color: s.color(gray);
+		line-height: 150%;
+		font-size: 14px;
+	}
 }
