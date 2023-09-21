@@ -13,6 +13,18 @@ User.create({
   role: 1,
 })
 
+// User.create({
+//   email: 'admin@gmail.com',
+//   password: 'Friday456',
+//   role: 2,
+// })
+
+// User.create({
+//   email: 'dev@gmail.com',
+//   password: 'G1h2dk8N',
+//   role: 3,
+// })
+
 // ================================================================
 
 // router.get Створює нам один ентпоїнт

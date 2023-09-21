@@ -1,0 +1,30 @@
+@use '../../style' as s;
+
+@use '../../style/form.scss' as form;
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(1);
+
+    &--click {
+        @include s.click;
+        text-decoration: none;
+    }
+
+    &__title {
+        font-size: 16px;
+        height: 32px;
+        padding: s.space(2) s.space(1);
+        border-radius: s.space(1);
+        color: s.color(dark);
+    }
+
+    &__sub {
+        font-size: 14px;
+        height: 22px;
+        padding: s.space(1);
+        border-radius: s.space(1);
+        color: s.color(light);
+    }
+}

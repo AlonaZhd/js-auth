@@ -56,4 +56,13 @@ body {
 		line-height: 150%;
 		font-size: 14px;
 	}
+
+	&__divider {
+		display: block;
+		border: none;
+		width: 100%;
+		margin: 0;
+		height: 1px;
+		background-color: s.color(divider);
+	}
 }
